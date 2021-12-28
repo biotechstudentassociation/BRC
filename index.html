@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <title>BRC</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Calibri;
+  margin: 0;
+}
+
+.side .fakeimg  {
+  overflow: hidden;
+  
+}
+
+
+.fakeimg a {
+  float: center;
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 20px;
+
+  text-decoration: none;
+  
+}
+
+.fakeimg a:hover {
+  background-color: #105652;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  font-size: 18px;
+  
+  padding: 20px;
+
+ 
+}
+
+/* Fake image, just for this example */
+.side .fakeimg {
+  background-color:#DFD8CA;
+ 
+  padding:1px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.fakeimg {
+  background-color: #414141;
+  width: 100%;
+  padding: 10px;
+  font-family: Calibri;
+    font-size: 18px;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #105652;
+  color: white;
+  margin-bottom:0px;
+}
+.footer a{
+  text-decoration: none; 
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .fakeimg a, .main,.footer ,.container{
+    
+    width: 100%;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="fakeimg"  style=" padding:80px;background-color: #105652;color: white;text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 20px "> 
+  <h1>Biotech Research Club</h1>
+
+  <p>Indian Institute of Technology Madras</p> 
+
+</div>
+
+
+
+<div class="row">
+ 
+    <div class="side" style="padding-top: 80px;">
+      
+      
+     
+      <div class="fakeimg" style="height:50px;"><a href="blog.html ">Blog</a>
+      </div><br>
+      <div class="fakeimg" style="height:50px;">      <a href="initiative.html">Initiative</a>
+      </div><br>
+      <div class="fakeimg" style="height:50px;">     <a href="newsletter.html">News Letter</a>
+      </div><br>
+     
+     
+      
+      <div class="fakeimg" style="height:50px;">      <a href="about.html" >About</a>
+      </div><br>
+
+    </div>
+  
+  <div class="main" style="width:50;background-image: url(images/index/index_image.jpg) ;background-repeat: no-repeat;background-size: cover;  ">
+    
+    <div class="fakeimg" style="margin-top: 90px;margin-bottom: 90px" ><br>
+
+      <p>Hi! we are a bunch of students who promote, discuss and encourage research in bio and allied fields! 
+
+      We organise talks, quizzes and have a monthly themed newsletter highlighting some upcoming conferences/talks and articles by students! </p><h3 style="font-family: 'Allura'; font-size: 40px; color: yellow;"> Do check out this month news letter</h3>
+    </div>
+   
+    
+  </div>
+</div>
+
+
+
+
+<div class="footer">
+  <p>Follow Us &emsp; <a href="https://www.instagram.com/bsaiitm/" target="_blank" ><i class="fa fa-instagram" style="font-size:36px"></i></a>&emsp;<a href="https://www.facebook.com/biotechresearchclubiitmadras" target="_blank" ><i class="fa fa-facebook-square" style="font-size:36px"></i></a>&emsp;<a href="mailto:biotechresearchclubiitm@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:36px"></i></a>&emsp;<a href="https://chat.whatsapp.com/AnLJuBtdjXP5ltT8dtlLrR" target="_blank"><i class="fa fa-whatsapp" style="font-size:36px"></i></a></p>
+ 
+</div>
+
+</body>
+</html>

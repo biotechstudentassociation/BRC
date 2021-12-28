@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    margin: 0;
+  
+    background-color: #DFD8CA;
+  
+  }
+  
+  /* Header/logo Title */
+  
+  
+  
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Calibri; }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .navbar .icon {
+    display: none;
+  }
+  @media screen and (max-width: 700px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  
+  /* Column container */
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    font-family: Calibri;   
+  }
+  
+  /* Main column */
+  
+  
+  /* Fake image, just for this example */
+  
+  
+  
+  
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background: #105652;
+    color: white;
+  }
+  .footer a{
+    text-decoration: none; 
+    color: white;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  .header {
+    font-family: Calibri;   padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    background: #105652;
+    color:white;
+  }
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  h4 {
+    font-family: Calibri; 
+  }
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  .card1{
+      background-color: #105652;
+  
+      color:white;
+     padding: 20px;
+     margin-top: 30px;
+  }
+  .name {
+    background-color: white;
+    color:black;
+    width: 100%;
+    padding: 20px;
+  }
+  .card1 a{
+      text-decoration: none;
+     color:black;
+  }
+  .card1 a:hover {
+    color: #FFCC1D;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  </style>
+</head>
+<body>
+    <div class="navbar" id="myTopnav">
+        <a href="../../index.html">Home</a>
+    
+      <a href="../../blog.html">Blog</a>
+      <a href="../../initiative.html">Initiative</a>
+      <a href="../../newsletter.html">News Letter</a>
+   
+      <a href="../../about.html" class="right">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="header">
+      <h2>Investigating the mechanisms underlying computations in neuronal circuits</h2>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn" style="padding: 10px;">
+        <div class="card">
+          <h2>Investigating the mechanisms underlying computations in neuronal circuits</h2>
+          <img src="../../images/initiative/seminar/19oct2k21.png" height="500px">
+          <h4>Abstract</h4>
+          
+          <p>The brain is the most complex structure known to man. Nevertheless, given the global burden of neurological disorders, understanding how this structure works is the need of our times. My work aims to understand brain function by examining the underlying neuronal circuitry, in particular, how they perform computations. A typical neuronal circuit is composed of atleast a dozen different types of neurons. What is the role of each neuronal type in the circuit? And what are the mechanisms that enable the neuronal type to perform its role? These are the questions that have driven my research career. In this session, I will start with a brief introduction on how we think circuits process information, using the retina as a model system. Then, I will explain how new technologies help in revealing the mechanisms underlying the computations performed by circuits. Finally, I will touch upon how understanding these circuit properties will likely help in revealing the mechanisms underlying neurological disorders.</p>
+        
+        <h4>Biography of the speaker</h4>
+        <p>Santhosh completed his B.Tech in Industrial Biotechnology from Alagappa College of Technology, Chennai. Upon completing his degree, he joined as a project assistant at the National Brain Research Centre, Gurgaon. He then moved to the State University of New York at Buffalo, to pursue a PhD in neuroscience, under the guidance of Prof. Malcolm Slaughter. His thesis work investigated the synaptic mechanisms regulating the visual sensitivity of retinal ganglion cells. For his post-doctoral work, he moved to the University of Victoria, to work with Prof. Gautam Awatramani. Here, using state-of-the-art tools—like optogenetics and two-photon imaging techniques—he investigated the mechanisms that facilitate the direction-selective computation in the retina. Now, he has joined IITM’s biotechnology department as an Assistant Professor, where he will continue to pursue his research interests in understanding how neuronal circuits function.</p>
+        
+    </div>
+        
+      </div>
+      <div class="rightcolumn">
+       
+        <div class="card1">
+          <h3>Date and time</h3>
+          <div class="name">6:30 PM,Tuesday,19th October 2021/div><br></div>
+          
+        </div>
+        <div class="card1">
+          <h2>Recording Link</h2>
+          <div class="name" style="height:100px;"><a href="https://youtu.be/wmwGlyTUHfM">https://youtu.be/wmwGlyTUHfM</a></div>
+         
+        </div>
+        
+      </div>
+    </div>
+    <br>
+
+<div class="footer">
+  <p  style="font-family: Calibri;">Follow Us &emsp; <a href="https://www.instagram.com/bsaiitm/" target="_blank" ><i class="fa fa-instagram" style="font-size:36px"></i></a>&emsp;<a href="https://www.facebook.com/biotechresearchclubiitmadras" target="_blank" ><i class="fa fa-facebook-square" style="font-size:36px"></i></a>&emsp;<a href="mailto:biotechresearchclubiitm@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:36px"></i></a>&emsp;<a href="https://chat.whatsapp.com/AnLJuBtdjXP5ltT8dtlLrR" target="_blank"><i class="fa fa-whatsapp" style="font-size:36px"></i></a></p>
+ 
+</div>
+
+<script src="../../navbar.js">
+    
+</script>
+
+</body></html>

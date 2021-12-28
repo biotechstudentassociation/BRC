@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    margin: 0;
+  
+    background-color: #DFD8CA;
+  
+  }
+  
+  /* Header/logo Title */
+  
+  
+  
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Calibri; }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .navbar .icon {
+    display: none;
+  }
+  @media screen and (max-width: 700px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  
+  /* Column container */
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    font-family: Calibri;   
+  }
+  
+  /* Main column */
+  
+  
+  /* Fake image, just for this example */
+  
+  
+  
+  
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background: #105652;
+    color: white;
+  }
+  .footer a{
+    text-decoration: none; 
+    color: white;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  .header {
+    font-family: Calibri;   padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    background: #105652;
+    color:white;
+  }
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  h4 {
+    font-family: Calibri; 
+  }
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  .card1{
+      background-color: #105652;
+  
+      color:white;
+     padding: 20px;
+     margin-top: 30px;
+  }
+  .name {
+    background-color: white;
+    color:black;
+    width: 100%;
+    padding: 20px;
+  }
+  .card1 a{
+      text-decoration: none;
+     color:black;
+  }
+  .card1 a:hover {
+    color: #FFCC1D;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  </style>
+</head>
+<body>
+    <div class="navbar" id="myTopnav">
+        <a href="../../index.html">Home</a>
+    
+      <a href="../../blog.html">Blog</a>
+      <a href="../../initiative.html">Initiative</a>
+      <a href="../../newsletter.html">News Letter</a>
+   
+      <a href="../../about.html" class="right">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+   
+<div class="header">
+  <h2>Interplay between tryptophan metabolites and the virulence factors of enteric pathogens</h2>
+</div>
+    
+
+    <div class="row">
+      <div class="leftcolumn" style="padding: 10px;">
+        <div class="card">
+          <h2>Interplay between tryptophan metabolites and the virulence factors of enteric pathogens</h2>
+          <img src="../../images/initiative/alumni/12dec2k20.png" height="500px">
+          <h4>Abstract</h4>
+          
+          <p>Microbial establishment within the gastrointestinal (GI) tract requires surveillance of the gut biogeography. The gut microbiota coordinates behaviors by sensing host- or microbiota-derived signals. Here we show that the tryptophan derivatives including the microbiota-derived indole and the host-derived serotonin decreases the virulence of enteric pathogens. We utilized C. rodentium (a mouse-specific model pathogen) to understand the dynamics of host-pathogen-microbiome interactions and show that both indole and serotonin decrease the expression of virulence-related genes in C . rodentium. Mechanistically, we also identified the bacterial membrane bound histidine kinase CpxA as an indole and serotonin sensor. Taken together, our data indicate that bacterial pathogen senses the gut info-chemicals to establish a successful infection.</p>
+        
+        <h4>Biography of the speaker</h4>
+        <p>Dr. Aman Kumar graduated from IIT Madras in 2015 with a B.Tech + M.Tech in Biotechnology and went on to do a Ph.D. at the University of Texas Southwestern Medical Center, where he worked on host-pathogen-commensal interactions in the human gut in the lab of Prof. Vanessa Sperandio. He is currently a postdoctoral research associate in the lab of Prof. Andrew Goodman at the Yale School of Medicine.</p>
+        
+    </div>
+        
+      </div>
+      <div class="rightcolumn">
+       
+        <div class="card1">
+          <h3>Date and time</h3>
+          <div class="name">7:15pm, 12th December 2020</div><br>
+          
+        </div>
+        <div class="card1">
+          <h3>Youtube Link</h3>
+          <div class="name" style="height:75px;"><a href="https://youtu.be/lwEn55YW1gk">https://youtu.be/lwEn55YW1gk</a></div>
+          
+        </div>
+      </div>
+    </div>
+    <br>
+
+<div class="footer">
+  <p  style="font-family: Calibri;">Follow Us &emsp; <a href="https://www.instagram.com/bsaiitm/" target="_blank" ><i class="fa fa-instagram" style="font-size:36px"></i></a>&emsp;<a href="https://www.facebook.com/biotechresearchclubiitmadras" target="_blank" ><i class="fa fa-facebook-square" style="font-size:36px"></i></a>&emsp;<a href="mailto:biotechresearchclubiitm@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:36px"></i></a>&emsp;<a href="https://chat.whatsapp.com/AnLJuBtdjXP5ltT8dtlLrR" target="_blank"><i class="fa fa-whatsapp" style="font-size:36px"></i></a></p>
+ 
+</div>
+
+<script src="../../navbar.js">
+    
+</script>
+
+</body></html>

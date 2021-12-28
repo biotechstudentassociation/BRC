@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    margin: 0;
+  
+    background-color: #DFD8CA;
+  
+  }
+  
+  /* Header/logo Title */
+  
+  
+  
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Calibri; }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .navbar .icon {
+    display: none;
+  }
+  @media screen and (max-width: 700px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  
+  /* Column container */
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    font-family: Calibri;   
+  }
+  
+  /* Main column */
+  
+  
+  /* Fake image, just for this example */
+  
+  
+  
+  
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background: #105652;
+    color: white;
+  }
+  .footer a{
+    text-decoration: none; 
+    color: white;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  .header {
+    font-family: Calibri;   padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    background: #105652;
+    color:white;
+  }
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  h4 {
+    font-family: Calibri; 
+  }
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  .card1{
+      background-color: #105652;
+  
+      color:white;
+     padding: 20px;
+     margin-top: 30px;
+  }
+  .name {
+    background-color: white;
+    color:black;
+    width: 100%;
+    padding: 20px;
+  }
+  .card1 a{
+      text-decoration: none;
+     color:black;
+  }
+  .card1 a:hover {
+    color: #FFCC1D;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  </style>
+</head>
+<body>
+    <div class="navbar" id="myTopnav">
+        <a href="../index.html">Home</a>
+    
+      <a href="../blog.html">Blog</a>
+      <a href="../initiative.html">Initiative</a>
+      <a href="../newsletter.html">News Letter</a>
+   
+      <a href="../about.html" class="right">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="header">
+      <h2>Synthetic Biology Goes Cell-Free</h2>
+    </div> 
+
+    <div class="row">
+      <div class="leftcolumn" style="padding: 10px;">
+        <div class="card">
+          <h2>Synthetic Biology Goes Cell-Free</h2>
+          <h5> November 11, 2020</h5>
+          <h4>Introduction</h4>
+          
+          <p>Life has evolved on earth for about 3.5 billion years and has survived all odds ranging from volcano eruption to asteroid impact events. This has been possible because life has the ability to reproduce, evolve and adapt to its surroundings. Now, with recent discoveries and the available modern technologies, we can manipulate organisms to do something that suits our purpose. For example, we have been using microorganisms to produce alcohol, bread, curd, etc. However, we now have technologies to cut and paste DNA. We can also synthesize new DNA which can be used in making novel proteins that can perform novel functions. It can also be used to create genetic circuits, analogous to electrical circuits, which can perform various functions like oscillation, switch-like behaviour, memory storage, etc. Engineering life to create something that is not found in nature and can have a useful purpose is synthetic biology. Lots of research has been done in Synthetic Biology and many of its applications have been shown in a variety of fields such as Detection of Heavy Metals using biosensors, manufacturing of certain macromolecules and polymers using microorganisms or cell cultures, diagnostics, bioremediation, producing cleaner and cheaper energy, and many more. However, not many of these inventions have come out of the lab. The major reason for this is the problem of biosafety. The organism that is modified to do a certain task cannot be released in the environment as we do not know how it will interact with the environment outside the lab.</p>
+        
+        <h4>Cell-free systems</h4>
+        <p>Cell-free systems (CFSs) are basically all components of the cell that are required for our function of interest without a cell wall. For example, if we want overexpression of a protein, we can have DNA coding for the protein, RNA polymerase to form mRNA, ribosomes, tRNA and amino acids in a solution. Start-ups like GreenLight and Sutro have shown low-cost production of RNA and protein from cell-free systems which are quite safe for use. Another example of cell-free systems is PCR where we can amplify a specific DNA sequence without using any cells in a solution. This process is very quick. This overcomes the issue of biosafety as the components cannot multiply themselves without cells. A simple process of filtering gives a bio-safe format for distribution outside the lab. Moreover, it allows for quick characterization of genetic circuits that we intend to build. It also minimizes cross-talk (interaction of our module of interest with other modules which leads to unexpected outcomes) as there is a minimum number of components in the system, unlike in cells. This also ensures better control over the process of the system, a privilege which we usually don't have while working with cells. Another great advantage of cell-free systems is easy storage and transport. After a process called freeze-drying which is basically drying out all water at low temperature, we can store the contents for over a year and even transport or distribute it.</p>
+        
+        <h4>Paper-Based Diagnostics</h4>
+        <p>Many groups across the globe have been working on paper-diagnostics. It is similar to using a pH paper to detect pH. The only change is you can use it for many more purposes. The paper can have genetic circuits that get activated upon exposure to water or a buffer and can be used to detect Mercury contamination or the presence of a virus (such as Zika, Dengue or Nipah). These paper-based diagnostics would be cheap and bio-safe to be used on the field and would be especially useful in case of an epidemic.</p>
+    
+    <img src='../images/blog/blog1_Fig1.jpg' height="200px">
+    
+    <p>Paper-based methods are also very relevant to agriculture which is usually decentralized and access to lab testing is difficult. Paper-based synthetic biology methods can be developed to characterize soil nutrients or plant diseases. Such methods can be very beneficial to agriculture.</p>
+    
+    <h4>Production of Therapeutics</h4>
+    <p>Cell-free systems have been useful for producing many peptide-based therapeutics such as vaccines, antimicrobial peptides, some antibiotics and even safe production of bacteriophages that can be useful for bacteriophage-based therapeutics. Many proteins require post-translational modifications such as phosphorylation that activates the protein, most of which are shown to be achievable in CFS. CFS also allows for the protection of intellectual property as codon tables can be easily modified. This allows for easy encryption of intellectual property.</p>
+    
+    <h4>CFS as a Platform for Discovery</h4>
+    <img src='../images/blog/blog1_Fig2.png' height="200px">
+    <p>CFSs are easy to work with compared to microorganisms or cell lines when it comes to protein engineering as it is easy to crystallize. CFSs have been very useful in metabolic engineering and several groups are able to put long pathways in CFSs and also scale up to process to about 100 litres. Liposomes are enclosed lipid bilayer spheres. Genetic circuits can be enclosed in liposomes and can be prototyped individually in a single system. Membrane proteins can be easily studied on cell-free systems containing liposomes, emulsions, micelles, or oil-water interface. CFSs can also be used for efficient energy storage. However, the research on this is still in its nascent stages. Maltodextrose based batteries have much higher energy density compared to even lithium-ion batteries.</p>
+    <h4>Role of CFS in Education</h4>
+    <p>CFS can be extensively used in education and spreading awareness about synthetic biology. Since it is bio-safe, it can be taken out of the lab to schools and education centres and some live experiments can be shown.</p>
+    <img src='../images/blog/blog1_Fig3.png' height="100px">
+    <p>CFS technology has immense potential because of its bio-safe format, lack of a cell wall allowing for rapid prototyping, and better control over the system. It has immense potential in various areas ranging from diagnostics, agriculture, peptide-based therapeutics, metabolic engineering, bioremediation, energy storage, and spreading awareness about synthetic biology.</p>
+    </div>
+        
+      </div>
+      <div class="rightcolumn">
+        <div class="card1">
+          <h2>Written by</h2>
+          <div class="name" style="height:100px;">Burhan Sabuwala</div>
+         
+        </div>
+        <div class="card1">
+          <h3>Reference</h3>
+          <div class="name">Tinafar A, Jaenes K, Pardee K. Synthetic Biology Goes Cell-Free. BMC Biol. 2019 Aug 8;17(1):64. doi: 10.1186/s12915-019-0685-x.</div><br>
+          
+        </div>
+        <div class="card1">
+          <h3>Share:<a href='http://twitter.com/share?text=Synthetic%20Biology%20Goes%20Cell-Free&url=https://biotechstudentassociation.github.io/SyntheticBiologyGoesCellFree/' style="color: white;" >Twitter</a>,<a href='https://www.facebook.com/sharer.php?u=https://biotechstudentassociation.github.io/SyntheticBiologyGoesCellFree/'style="color: white;">Facebook</a></h3>
+          
+        </div>
+      </div>
+    </div>
+    <br>
+
+<div class="footer">
+  <p  style="font-family: Calibri;">Follow Us &emsp; <a href="https://www.instagram.com/bsaiitm/" target="_blank" ><i class="fa fa-instagram" style="font-size:36px"></i></a>&emsp;<a href="https://www.facebook.com/biotechresearchclubiitmadras" target="_blank" ><i class="fa fa-facebook-square" style="font-size:36px"></i></a>&emsp;<a href="mailto:biotechresearchclubiitm@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:36px"></i></a>&emsp;<a href="https://chat.whatsapp.com/AnLJuBtdjXP5ltT8dtlLrR" target="_blank"><i class="fa fa-whatsapp" style="font-size:36px"></i></a></p>
+ 
+</div>
+
+<script src="../navbar.js">
+    
+</script>
+
+</body></html>

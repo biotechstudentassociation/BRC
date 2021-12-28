@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BRC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  margin: 0;
+
+  background-color: #DFD8CA;
+
+}
+
+/* Header/logo Title */
+
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Calibri; }
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar .icon {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  font-family: Calibri;   
+}
+
+/* Main column */
+
+
+/* Fake image, just for this example */
+
+
+
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #105652;
+  color: white;
+  font-family: Calibri; 
+}
+.footer a{
+  text-decoration: none; 
+  color: white;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.header {
+  font-family: Calibri; 
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  background: #105652;
+  color:white;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+h4 {
+  font-family: Calibri; 
+
+}
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+.card1{
+    background-color: #105652;
+
+    color:white;
+   padding: 20px;
+   margin-top: 30px;
+}
+.name {
+  background-color: white;
+  color:black;
+  width: 100%;
+  padding: 20px;
+}
+.card1 a{
+    text-decoration: none;
+   color:white;
+}
+.card1 a:hover {
+  color: #FFCC1D;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+table {
+  
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="navbar" id="myTopnav">
+    <a href="../index.html">Home</a>
+
+  <a href="../blog.html">Blog</a>
+  <a href="../initiative.html">Initiative</a>
+  <a href="../newsletter.html">News Letter</a>
+  
+  <a href="../about.html" class="right">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="header">
+  <h2>Molecular Digital Data Storage Using DNA </h2>
+</div>
+<div class="row">
+  <div class="leftcolumn" style="padding: 10px;">
+    <div class="card">
+      <h3>”I am inspired by the biological phenomena in which chemical forces are used in a repetitious fashion to produce
+        all kinds of weird effects.” - Richard Feynman
+         </h3>
+     
+      <h4>Introduction</h4>
+      
+      <p>Today, there are a variety of devices which we can use to store digital data, like text, photos and videos. Wellknown examples include USB flash drives, hard disks, CDs, DVDs and Blu-Rays. We are also aware of a few
+        obsolete storage devices like floppy disks and radio tapes which we do not use anymore. We are satisfied with
+        the technology we have at the moment in terms of storing large volumes of digital data, and they have made
+        fast-paced progress. Nevertheless, do we have to think of finding an alternative and a much efficient way to
+        store data? Unfortunately, it turns out that these devices are approaching their density limits. In other words,
+        the amount of data that these devices can store per unit volume are limited and fixed. As data and information
+        are being generated in an exponential manner, it is expected that today’s storage devices might also be outdated soon. The information stored on them can only last for a few decades. This brings us to a situation where
+        we have to hunt for a novel way to store large amounts of data for a very long period of time.
+        </p>
+    
+    <h4>What’s so special about DNA? </h4>
+    <p>DNA, or deoxyribonucleic acid, as we know is the genetic material present in most living organisms. They are
+        double-helical structures consisting of four nucleotide bases - Adenine (A), Guanine (G), Cytosine (C) and
+        Thymine (T) - along with sugar molecules and phosphate groups. The half-life of DNA is around 500 years in
+        appropriate conditions, which means that it takes 500 years for just half of its bonds to break, making it highly
+        stable. Interestingly, extensive research is taking place on using DNA to store digital data. Data is stored in
+        electronic devices in the form of binary digits, 0 and 1. A simple idea is to map the sequence of binary digits to
+        nucleotide sequences containing the four bases. One way to implement this is to map 2-bit sequences to the
+        four nucleotides, as shown below.
+        </p>
+        <table >
+  
+          <tr>
+            <td>00</td>
+            <td>01</td>
+            <td>10</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>C</td>
+            <td>G</td>
+            <td>T</td>
+          </tr>
+          
+        </table>
+    <p>In this way, we can convert large sequences of binary digits to sequences of nucleotide bases. </p>
+    <h4>A brief history of DNA data storage </h4>
+    <p>The concept of using DNA for data storage dates back to mid-1960s when the Soviet physicist Mikhail Neiman and the mathematician Norbert Wiener expressed their ideas of storing and retrieving digital data at the molecular level. In 1988, an artist named Joe Davis was able to encode a 35-bit image of an ancient Germanic rune representing life and the female Earth in a DNA sequence, which was then inserted into E. coli. In 1999, secret messages were hidden in DNA microdots on paper. </p>
+
+<img src='https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2F21092/MediaObjects/41586_1999_Article_BF21092_Fig1_HTML.gif?as=webp' height="200px" style="margin-left: 25%;">
+
+<p>Figure 1: Genomic steganography: Secret messages encoded in DNA Source: <a href='https://www.nature.com/articles/21092'>https://www.nature.com/articles/21092</a></p>
+<p>Following these remarkable attempts, several trials have been performed to improve the capacity and efficiency of DNA-based storage devices. More recently, in 2019, scientists were able to encode all of Wikipedia, totalling 16 GB, onto DNA strands. </p>
+<h4>A broad overview of the steps required </h4>
+<p>The four major steps involved in DNA data storage are: write, store, retrieve and read.</p>
+
+<h4>Writing and Storing&nbsp;</h4>
+<p>As mentioned previously, this step involves mapping strings of bits into DNA sequences by making use of computational algorithms. The binary sequences are usually broken down into smaller chunks and indices are added to each chunk to enable reassembly. The resulting DNA sequences are then synthesised. There are a variety of ways to synthesise DNA chemically. The most commonly used method is phosphoramidite-based oligonucleotide synthesis. The synthesised DNA sequences are stored in a library of DNA pools.&nbsp;</p>
+<h4>Retrieving and Reading&nbsp;</h4>
+<p>If we have to retrieve a particular data item from the library of DNA pools, we have to make sure that we choose that specific item among others rather than reading all the available data. This principle is called random access and is widely incorporated in computer memory. This can also be achieved in DNA storage by making use of PCR (Polymerase Chain Reaction) associated primers or magnetic bead extraction. Once the required data item is identified, we have to sequence it and convert it back to binary format. Again, there are a variety of ways to sequence DNA. Next-Generation Sequencing (NGS) is a massively parallel sequencing technique which is widely used on a commercial scale. Other methods include Sanger sequencing and Nanopore sequencing.&nbsp;</p>
+<h4>What about errors?&nbsp;</h4>
+<p>Both sequencing and synthesis are prone to errors like substitution, insertion and deletion of bases. In order to address these issues, error-correcting codes are implemented during the process of encoding. For example, redundant information is added to increase the probability that the original information can be retrieved even in the presence of errors and missing data. There are several ways to incorporate redundant information. Reed-Solomon codes are popular error-correcting codes that are also used to correct errors in present digital storage devices.&nbsp;</p>
+<h4>Storing data inside living cells!&nbsp;</h4>
+<p>Advancements in the field of synthetic biology have led to the construction of complicated synthetic genetic networks that can perform logical and state-dependent functions. Recording and storing of data can be done inside cells by using either a recombinase-based approach or CRISPR-based approaches. These systems can be used as biological recording devices which are more suited to collecting new data.&nbsp;</p>
+<img src='../images/blog/blog2_fig 2.png' height="200px" style="margin-left: 25%;">
+
+<p>Figure 2: Storing and recording data in DNA - in vivo approach Source: <a href='https://www.nature.com/articles/s41576-019-0125-3'>https://www.nature.com/articles/s41576-019-0125-3</a></p>
+<h4>A Promising Alternative?&nbsp;</h4>
+<p>Despite the advantages of utilizing DNA to store data efficiently, there are several challenges and drawbacks that might need to be addressed. For example, it can take plenty of time to write and retrieve data, unlike modern data storage devices. Additionally, the degradation of DNA can be prevented only if it is stored under suitable conditions - low temperature and low humidity in the absence of ultraviolet rays. It is also important to develop better error-correcting mechanisms to improve the accuracy of the information obtained from the data. Hence, tremendous efforts are required to tackle these inherent problems.</p>
+<p>Nevertheless, there is immense scope for DNA being the ideal storage device in the future due to its capacity to store enormous amounts of data in low volumes. It is fascinating to note that, theoretically, all the available data in the world can be stored in just a few hundred grams of DNA. Moreover, the ease of replication of DNA allows copying of data in constant time regardless of the size of the data. On the other hand, the copying time of any modern digital storage device is proportional to the size of the data.</p>
+<p>In conclusion, as long as life exists on our planet, DNA can offer an eternal form of data storage that will never become obsolete!</p>
+<h1>&nbsp;</h1>
+</div>
+ 
+    </div>
+    <div class="rightcolumn">
+      <div class="card1">
+        <h2>Written by</h2>
+        <div class="name" style="height:100px;">Prashant Govindarajan</div>
+       
+      </div>
+      <div class="card1">
+        <h3>Reference</h3>
+        <div class="name"><p>Ceze, L., Nivala, J. &amp; Strauss, K. Molecular digital data storage using DNA. Nat Rev Genet 20, 456&ndash;466 (2019). <a href="https://doi.org/10.1038/s41576-019-0125-3 " style="color: purple;">https://doi.org/10.1038/s41576-019-0125-3</a></p></div><br>
+        
+      </div>
+      <div class="card1">
+        <h3>Share:<a href='http://twitter.com/share?text=Synthetic%20Biology%20Goes%20Cell-Free&url=https://biotechstudentassociation.github.io/SyntheticBiologyGoesCellFree/'>Twitter</a>,<a href='https://www.facebook.com/sharer.php?u=https://biotechstudentassociation.github.io/SyntheticBiologyGoesCellFree/'>Facebook</a></h3>
+        
+      </div>
+    </div>
+  </div>
+  <br>
+<div class="footer">
+  <p>Follow Us &emsp; <a href="https://www.instagram.com/bsaiitm/" target="_blank" ><i class="fa fa-instagram" style="font-size:36px"></i></a>&emsp;<a href="https://www.facebook.com/biotechresearchclubiitmadras" target="_blank" ><i class="fa fa-facebook-square" style="font-size:36px"></i></a>&emsp;<a href="mailto:biotechresearchclubiitm@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:36px"></i></a>&emsp;<a href="https://chat.whatsapp.com/AnLJuBtdjXP5ltT8dtlLrR" target="_blank"><i class="fa fa-whatsapp" style="font-size:36px"></i></a></p>
+ 
+</div>
+<script src="../navbar.js">
+    
+</script>
+
+
+</body>
+</html>

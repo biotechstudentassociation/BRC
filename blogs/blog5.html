@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BRC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  margin: 0;
+
+  background-color: #DFD8CA;
+
+}
+
+/* Header/logo Title */
+
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Calibri; }
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar .icon {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  font-family: Calibri;   
+}
+
+/* Main column */
+
+
+/* Fake image, just for this example */
+
+
+
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #105652;
+  color: white;
+}
+.footer a{
+  text-decoration: none; 
+  color: white;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.header {
+  font-family: Calibri;   padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  background: #105652;
+  color:white;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+h4 {
+  font-family: Calibri; 
+}
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+.card1{
+    background-color: #105652;
+
+    color:white;
+   padding: 20px;
+   margin-top: 30px;
+}
+.name {
+  background-color: white;
+  color:black;
+  width: 100%;
+  padding: 20px;
+}
+.card1 a{
+    text-decoration: none;
+   color:white;
+}
+.card1 a:hover {
+  color: #FFCC1D;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="navbar" id="myTopnav">
+    <a href="../index.html">Home</a>
+
+  <a href="../blog.html">Blog</a>
+  <a href="../initiative.html">Initiative</a>
+  <a href="../newsletter.html">News Letter</a>
+ 
+  <a href="../about.html" class="right">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="header">
+  <h2>DNA Sequencing at 40: Past, Present and Future  </h2>
+</div>
+<div class="row">
+  <div class="leftcolumn" style="padding: 10px;">
+    <div class="card">
+     
+     
+     
+      <p><em>&ldquo;DNA is like a computer program but far, far more advanced than any software ever created.&rdquo; - </em>Bill Gates&nbsp;</p>
+      <p>Today, DNA Sequencing has become one of the most commonly used techniques in the field of molecular biology. It has become an integral part of various experiments and procedures since its origin. DNA Sequencing has come a long way in the past 40 years, and it currently addresses a breadth of problems for which it has proven very effective. To understand its history and applications better, it is rather important to learn about the origin of the biopolymer - DNA.&nbsp;</p>
+      <h1>Discovery of Double-stranded DNA&nbsp;</h1>
+      <img src='../images/blog/blog 5 fig 1.png' height="150px" >
+      <p><em>Figure 1: </em>(Left to Right) A caricature of James Watson and Francis Crick holding the DNA, the double-stranded DNA, a silhouette of Rosalind Franklin</p>
+      <p>In the early 1950s, Rosalind Franklin performed X-ray crystallography experiments to capture the structure of DNA. Franklin's photographs were described as "the most beautiful X-ray photographs of any substance ever taken" by J.D.Bernal. Around the same time, James Watson and Francis Crick put together available information from various sources, which included X-ray images and model building techniques, and solved the most central question in molecular biology that had baffled other scientists for decades.&nbsp;</p>
+      <h1>But when did Sequencing start?&nbsp;</h1>
+      <p>Fred Sanger, Gilbert and Maxam built the initial blocks of DNA Sequencing. Sanger established the sequence of insulin, making it the first protein ever to be sequenced, followed by Gilbert and Maxam who deciphered the sequence of the lactose-repressor binding site. However, sequencing DNA was still a difficult task. Both these parties then individually came up with different methods of DNA Sequencing for which they were given the Nobel prize in 1980. Sanger&rsquo;s protocol involved four extensions of a DNA primer which involved a chain-terminating nucleotide each. On the other hand, in Gilbert&rsquo;s method for sequencing, four separate chemical reactions were set up to create base-specific partial cleavage. In both the above methods, we get to know the relative positions of nucleotides in the strand, thereby deciphering the entire sequence. Then came another technique, called Shotgun Sequencing, which involved chopping the DNA strand into multiple pieces, sequencing each strand individually, and then aligning them based on their overlap.&nbsp;</p>
+      <img src='../images/blog/blog 5 fig 2.png' height="150px" >
+      <p><em>Figure 2</em>: (Left to Right) Sanger Sequencing protocol, Gilbert and Maxam method for Sequencing Reference - https://www.onlinebiologynotes.com/sangers-method-gene-sequencing/</p>
+      <p>Ever since these mechanisms came into existence, the amount of sequenced data generated grew exponentially! Hence, additional tools and central data repositories such as GenBank-DDBJ, NCBI, etc. were set up. BLAST, a search tool which allows one to align their DNA strand with a previously annotated one, has now proved extremely beneficial to the entire scientific community. Sanger sequencing machines, which use bots to perform the experiments for us, were developed later. How amazing, right?</p>
+      <h1>Sequencing the entire human genome? Possible?&nbsp;</h1>
+      <img src='../images/blog/blog 5 fig 3.png' height="150px" >
+      <p><em>Figure 3</em>: (Left to Right) A figurative model depicting synthesis of Human Genome, Shotgun sequencing applied for the HGP. Reference - http://sitn.hms.harvard.edu/flash/2019/lessons-from-the-human-genome-project/</p>
+      <p>With all the available data and documentation, scientists next set out to sequence the entire human genome. This project was fragmented into multiple sub-projects, and each was assigned to a different country. The Human Genome Project (HGP), one of the most ambitious scientific projects ever undertaken, took 13 years to sequence the entire human genome, thereby accomplishing a monumental goal at the end of it. But wait! Every task needs competition. Doesn&rsquo;t it? In parallel with the HGP, Celera promised to sequence the genome effectively and efficiently, but in three years. At the end of the game, the results were analysed, and it was concluded that both the HGP and Celera had similar performance rates. Hence, the competition was tied.&nbsp;</p>
+      <p>Efforts on sequencing thenceforth were reduced by a large fraction, as the above techniques and the HGP laid the groundwork for thousands of scientific studies associating genomes and other problems.&nbsp;</p>
+      <h1>The Next-Generation is always smarter!&nbsp;</h1>
+      <img src='../images/blog/blog 5 fig 4.png' height="150px" >
+      <p><em>Figure 4</em>: (Left to Right) Depiction of Sequence by Synthesis, (right-top) depictive model of how DNA is bound to the flow cell, (right-bottom) fluorescence observed on the flow cell. Reference - https://binf.snipcademy.com/lessons/ngs-techniques/illumina-solexa</p>
+      <p>The invention of <em>&lsquo;Next-generation DNA Sequencing&rsquo; </em>(NGS) marked a new era for the field of genomic analysis and documentation. NGS technologies provide higher throughput data for lower cost and enable population-scale genome research. Instead of carrying out one reaction in a tube, the DNA fragments are immobilised on a flow cell where the templates have common access to one reagent volume. While the DNA molecules are being synthesised, polymerase-mediated incorporation of fluorescently labelled nucleotides occurs, with each nucleotide being tagged with a different fluorescent dye. With the addition of nucleotides, the tags fluoresce which is captured by the machine, thereby enabling the sequencing of the DNA strand. This fascinating technique is also known as &lsquo;Sequence by Synthesis&rsquo; (SBS) and is prevalent in all modern-day sequencing methods.&nbsp;</p>
+      <h1>Fancier than NGS? You got to be kidding!&nbsp;</h1>
+      <p>Around the time when NGS was ruling genomic studies, there was yet another revolutionary technique that came up. It had even higher throughput and was able to sequence larger strands of DNA within a few minutes! The first of this kind is called the PacBio - <em>Single-Molecule Real-Time Sequencing technique</em>, in which time and space complexity is way lower than that of any of the previous methods that we have reviewed. The DNA Polymerase enzyme is held in a fixed position, and the DNA strand moves around it and is sequenced while being synthesised. Now, if you had thought that any of the above techniques are groundbreaking and exhilarating, then wait! The Lord of the sequencers is yet to be revealed. The second of this kind is the most recent one - <em>Nanopore Sequencing</em>. Here&rsquo;s how it works. A single-stranded DNA fragment is sent through a nanopore and, based on the electrostatic interaction of nucleotides with the pore, the sequencer records the plausible nucleotide that was&nbsp;</p>
+      <p>encountered. The machine looks like a regular USB/pen-drive, weighs only 70 grams, and can sequence the entire human genome in less than a day!</p>
+      <p>How cool!</p>
+      <h1>Applications of Sequencing&nbsp;</h1>
+      <p>For its first 25 years, the primary purpose of DNA Sequencing was the partial/complete sequencing of genomes. However, with advancements in the field, the range and scope of DNAseq applications go from Plank to Parsec. Today, DNA sequencing is applied in varied key areas marking itself as one of the most popularly used techniques in the fields of synthetic and molecular biology. <em>De novo </em>genome assembly requires DNAseq on a fundamental basis so that unknown stretches of DNA could either be sequenced first or matched with an already annotated sequence. Sometimes, when we lack confidence in previously available sequences, or in case we want to study the evolutionary perspectives of a gene, genome resequencing proves to be highly useful. It helps one identify mutations in particular fragments, or even reduce the error rates of the available sequence by resequencing and comparing with the ones in the repositories. Yet another important application of DNAseq is observed in clinical practice. Medications, diagnostics and treatments could be much improved if the sequence of the defective gene is available in certain diseases such as cancer.&nbsp;</p>
+      <h1>What future awaits us?&nbsp;</h1>
+      <p>&ldquo;There are millions of species on earth (and far more extinct species), each with a genome waiting to be sequenced, as well as countless microbiomes and metagenomes.&rdquo; With such a genetic diversity amongst species, it is rather important to analyse our pattern of evolution by sequencing each one&rsquo;s genome and performing comparative studies. The nanopore sequencer will act as a real-time portable sensor which can analyse the sequence of the genome just like there are devices to analyse the pH or temperature of any solution. Other unconventional applications of DNAseq are to use DNA as a storage device by treating it as an alternate way of representing information. This, again, would require DNA sequencing.&nbsp;</p>
+      <p>In conclusion<strong></strong>, DNA sequencing is essential to a molecular biologist, just like how a microbiologist would perceive a microscope. The future certainly holds many more improvements and innovations with surprising and contemporary applications of this technique. So, stay tuned!</p>
+  
+</div>
+ 
+    </div>
+    <div class="rightcolumn">
+      <div class="card1">
+        <h2>Written by</h2>
+        <div class="name" style="height:100px;">Sahana Gangadharan</div>
+       
+      </div>
+      <div class="card1">
+        <h3>Reference</h3>
+        <div class="name"><p>Shendure, J., Balasubramanian, S., Church, G. et al. DNA sequencing at 40: past, present and future. Nature 550, 345&ndash;353 (2017). <a href="https://doi.org/10.1038/nature24286" style="color: purple;">https://doi.org/10.1038/nature24286</a></p></div><br>
+        
+      </div>
+      <div class="card1">
+        <h3>Share:<a href='http://twitter.com/share?text=Synthetic%20Biology%20Goes%20Cell-Free&url=https://biotechstudentassociation.github.io/SyntheticBiologyGoesCellFree/'>Twitter</a>,<a href='https://www.facebook.com/sharer.php?u=https://biotechstudentassociation.github.io/SyntheticBiologyGoesCellFree/'>Facebook</a></h3>
+        
+      </div>
+    </div>
+  </div>
+  <br>
+<div class="footer">
+  <p>Follow Us &emsp; <a href="https://www.instagram.com/bsaiitm/" target="_blank" ><i class="fa fa-instagram" style="font-size:36px"></i></a>&emsp;<a href="https://www.facebook.com/biotechresearchclubiitmadras" target="_blank" ><i class="fa fa-facebook-square" style="font-size:36px"></i></a>&emsp;<a href="mailto:biotechresearchclubiitm@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:36px"></i></a>&emsp;<a href="https://chat.whatsapp.com/AnLJuBtdjXP5ltT8dtlLrR" target="_blank"><i class="fa fa-whatsapp" style="font-size:36px"></i></a></p>
+ 
+</div>
+<script src="../navbar.js">
+    
+</script>
+
+
+</body>
+</html>

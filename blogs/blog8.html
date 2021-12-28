@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  margin: 0;
+
+  background-color: #DFD8CA;
+
+}
+
+/* Header/logo Title */
+
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Calibri; }
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar .icon {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  font-family: Calibri;   
+}
+
+/* Main column */
+
+
+/* Fake image, just for this example */
+
+
+
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #105652;
+  color: white;
+}
+.footer a{
+  text-decoration: none; 
+  color: white;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.header {
+  font-family: Calibri;   padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  background: #105652;
+  color:white;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+h4 {
+  font-family: Calibri; 
+}
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+.card1{
+    background-color: #105652;
+
+    color:white;
+   padding: 20px;
+   margin-top: 30px;
+}
+.name {
+  background-color: white;
+  color:black;
+  width: 100%;
+  padding: 20px;
+}
+.card1 a{
+    text-decoration: none;
+   color:white;
+}
+.card1 a:hover {
+  color: #FFCC1D;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="navbar" id="myTopnav">
+    <a href="../index.html">Home</a>
+
+  <a href="../bolg.html">Blog</a>
+  <a href="../initiative.html">Initiative</a>
+  <a href="../newsletter.html">News Letter</a>
+
+  <a href="../about.html" class="right">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="header">
+  <h2>Cheating Evolution: Engineering Gene Drives to Manipulate the Fate of Wild Populations</h2>
+</div>
+<div class="row">
+  <div class="leftcolumn" style="padding: 10px;">
+    <div class="card">
+     
+     
+     
+      <h1>Introduction</h1>
+      <p>Synthetic biology is a field of biology whose aim is conventionally understood to be the engineering of biological systems to serve useful purposes, and the systems in question are generally understood to be individual cells or small populations of cells. However, research in synthetic biology has yielded tools that allow the engineering of not only cells in a tube but also of entire wild populations. These tools are called gene drives.</p>
+      <p>A gene drive is a tool that allows us to &lsquo;drive&rsquo; a gene of interest through a wild population, resulting in either the modification or suppression of the wild population. This is done by biasing the inheritance of particular alleles. Going against Mendelian genetics, gene drives cause some alleles to be inherited at much higher frequencies than others, thus causing these genes to quickly spread through the population. Research into gene drives has typically focused on solving two global problems: the suppression of invasive species and the control of vector-borne diseases. The latter is an active area of research as insect vectors, with their high rate of reproduction, are a model on which gene drives are easily testable and can be applied to solve critical problems. This can be done, for instance, by simply reducing the population of insect vectors or by employing more advanced approaches such as the engineering of wild mosquito populations to express genes that kill malarial parasites and dengue viruses.</p>
+      <h1>Classes of Gene Drives</h1>
+      <p>There are five main classes of gene drives, each with their own advantages and drawbacks. We will take a brief look at all five classes.</p>
+      <h3>Homing-Based Drives</h3>
+      <p>Homing-based drives involve the use of homing endonuclease genes (HEGs). The HEGs are coupled to a gene on one chromosome and recognize a specific sequence within the same gene on the other chromosome. During the formation of gametes, they disrupt the other chromosome and homology directed repair, which repairs one chromosome using the other as a template, leads to the copying of the gene drive element onto the other chromosome as well. So, all gametes will contain a copy of the gene drive element. By conventional Mendelian genetics, only half of the gametes should have a copy.</p>
+      <p>As the engineering of an endonuclease to recognize a DNA sequence of choice is difficult, the CRISPR-Cas9 system may instead be used. Here, a gRNA (guide RNA) complementary to a specific sequence as well as the Cas9 protein are expressed by the gene drive element.</p>
+      <img src='../images/blog/blog 8 fig 1.png' height="500px" >
+      <p>Fig. 1: HEG mechanism (a) and its CRIPR-based implementation (b), as well as the design of reversal (c) and suppression (d) drives</p>
+      <p>Homing-based drives can be modification drives when the gene drive element carries a payload gene that is to be driven through the population or suppression drives when the HEG targets an essential gene. A zygote that inherits a suppressor drive from both parents has no viable copies of the essential gene and dies.</p>
+      <p>A homing-based drive can be reversed by releasing another drive that disrupts the first gene drive. However, this does not cause the population to revert to a true wild state. So, the effects of a homing-based drive cannot be entirely reversed. It is also possible for individuals to develop resistance to such a gene drive if the disrupted chromosome is repaired without the use of the gene drive as a template (for example by non-homologous end-joining) or if the gene drive is improperly copied leading to errors in the gRNA sequence.</p>
+      <h3>Sex-Linked Meiotic Drives</h3>
+      <p>These drives generally prevent the formation of gametes of a particular sex that lack the gene drive element. The best-characterized drive of this class is called the X-shredder. The X-shredder is present on the Y-chromosome in males and encodes an endonuclease that cuts or &lsquo;shreds&rsquo; the X-chromosome at multiple sites. This shredding takes place during gamete formation and ensures that all sperm cells produced by the male individual bear Y-chromosomes. So, males that carry the X-shredder cannot give rise to female progeny, and all their male progeny carry the X-shredder as well. This gradual rise in the male population carrying the X-shredder will eventually lead to a population collapse due to the low number of sexually-active females.</p>
+      <p>Fig. 2: The mechanism of the X-shredder and its inheritance pattern (a), its CRIPSR-based implementation (b) and a design for a reversal drive (c).</p>
+      <p>The X-shredder can also be implemented using CRISPR. Instead of endonucleases that recognize multiple sites, we can simply use gRNAs that are complementary to multiple sites along the X-chromosome.</p>
+      <p>The effects of an X-shredder can be reversed by releasing males with X-chromosomes that have gRNAs that target the gRNA of the X-shredder. This leads to the removal of the X-shredders gRNA and thus inactivates the gene drive. However, this method of reversal leaves an imprint in the DNA of the wild population in the form of the reversal gRNAs.</p>
+      <h3>Medea</h3>
+      <p>The maternal effect dominant embryonic arrest (<em>Medea</em>) elements encode a toxin that is deposited in all egg cells during gamete formation. The same element also encodes an antidote for the toxin. So, half of the progeny inherit the element and survive. This ensures that all offspring carry the <em>Medea</em> element. If both the male and female parents carry the <em>Medea</em> element, then three-fourths of their progeny survive.</p>
+      <img src='../images/blog/blog 8 fig 3.png' height="500px" >
+      <p>Fig. 3: The <em>Medea</em> mechanism and its inheritance pattern (a), its CRISPR-based implementation (b) and the design for a reversal drive and its inheritance pattern (c)</p>
+      <p><em>Medea</em>, like other gene drive systems, can be implemented using a CRISPR system that targets an essential gene in place of the toxin and the same gene with a re-coded sequence that isn&rsquo;t complementary to the gRNA as the antidote. <em>Medea</em> cannot be entirely reversed, but reversal drives can be constructed that replace the first payload gene using a second <em>Medea</em> element.</p>
+      <h3>Underdominance Gene Drive</h3>
+      <p>An underdominance system is on in which all homozygotes (having 2 wild-type chromosomes or two chromosomes bearing the gene drive) have greater reproductive fitness than all heterozygotes (bearing one copy each of the wild-type and gene drive chromosomes). This is achieved by having each chromosome of the transgenic individuals encode an antidote to a toxin on the other chromosome. Similar to <em>Medea</em>, this can be built using a CRISPR system and a re-coded gene in place of the toxin and antidote.</p>
+      <img src='../images/blog/blog 8 fig 4.png' height="300px" >
+      <p>Fig. 4: The inheritance pattern of an underdominance gene drive (a), its mechanism of action (b) and its CRISPR-based implementation (c)</p>
+      <p>An interesting feature of underdominance systems is that they behave like population-level bistable switches in which the population moves towards being composed entirely of transgenic or wild-type homozygotes depending on which of the two had a greater population initially. This is because, assuming mating is random, the homozygotes with lower initial frequency are more likely to mate with homozygotes of the other kind leading to unfit offspring, while those with higher initial frequency are more likely to mate among themselves leading to fitter offspring.</p>
+      <p>This bistability implies that the effects of underdominance systems can be entirely reversed by simply releasing a large number of wild-type individuals such that the population of wild-type individuals becomes greater than that of the transgenic ones. However, this is obviously not an idea that can easily be put into practice.</p>
+      <h3>Heritable Microorganisms</h3>
+      <p>The last type of gene drive we&rsquo;ll be looking at is a remarkable bacterium called <em>Wolbachia</em>. <em>Wolbachia</em> is an intracellular parasite that has can be found in about half of all insects. It resides in a variety of different cell types including egg cells, which is how it is passed on from mothers to offspring.</p>
+      <p><em>Wolbachia</em> is yet to be extensively studied and characterized. While we know very little about it, we do know of some strains of <em>Wolbachia</em> that induce parthenogenesis, male-killing, feminization and shortening of lifespan in hosts, all of which are traits that could be used to modify or suppress host populations. Much work still needs to be done before we can engineer <em>Wolbachia</em> to do our bidding, but field trials using existing strains have yielded positive results.</p>
+      <h1>Concerns</h1>
+      <p>The use of gene drives on wild populations could have multiple unanticipated effects, and we are not yet capable of assessing all possible consequences of the release of transgenic organisms into the wild. It is possible for gene drives to have unintended off-target effects on other parts of the host genome. It is difficult to confine gene drives geographically as individual organisms migrating out of the area may carry the gene drive element with them. There is also the possibility, however small, of the gene drive being transmitted from one species to another.</p>
+      <p>However, the damage caused by vector-borne diseases is immense. Every year, these diseases infect over a billion people and kill over a million. More than half the world&rsquo;s population, primarily in the developing regions of the world, is at risk of these diseases. While there are many who dismiss gene drives as being too unpredictable, perhaps we owe it to the billions of people world-over who aren&rsquo;t as privileged as us to continue research on systems that have the potential to alleviate untold suffering.</p>
+  
+</div>
+ 
+    </div>
+    <div class="rightcolumn">
+      <div class="card1">
+        <h2>Written by</h2>
+        <div class="name" style="height:100px;">Sathvik Anantakrishnan</div>
+       
+      </div>
+      <div class="card1">
+        <h3>Reference</h3>
+        <div class="name"><p>Champer, J., Buchman, A., &amp; Akbari, O. S. (2016). Cheating evolution: engineering gene drives to manipulate the fate of wild populations. Nature Reviews Genetics, 17(3), 146&ndash;159. <a href="https://doi.org/10.1038/nrg.2015.34" style="color: purple;">https://doi.org/10.1038/nrg.2015.34</a></p></div><br>
+        
+      </div>
+      <div class="card1">
+        <h3>Share:<a href='http://twitter.com/share?text=Synthetic%20Biology%20Goes%20Cell-Free&url=https://biotechstudentassociation.github.io/SyntheticBiologyGoesCellFree/'>Twitter</a>,<a href='https://www.facebook.com/sharer.php?u=https://biotechstudentassociation.github.io/SyntheticBiologyGoesCellFree/'>Facebook</a></h3>
+        
+      </div>
+    </div>
+  </div>
+  <br>
+<div class="footer">
+  <p>Follow Us &emsp; <a href="https://www.instagram.com/bsaiitm/" target="_blank" ><i class="fa fa-instagram" style="font-size:36px"></i></a>&emsp;<a href="https://www.facebook.com/biotechresearchclubiitmadras" target="_blank" ><i class="fa fa-facebook-square" style="font-size:36px"></i></a>&emsp;<a href="mailto:biotechresearchclubiitm@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:36px"></i></a>&emsp;<a href="https://chat.whatsapp.com/AnLJuBtdjXP5ltT8dtlLrR" target="_blank"><i class="fa fa-whatsapp" style="font-size:36px"></i></a></p>
+ 
+</div>
+<script src="../navbar.js">
+    
+</script>
+
+
+</body>
+</html>

@@ -110,7 +110,7 @@ body {
   color: white;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
@@ -119,59 +119,48 @@ body {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-* {
-  box-sizing: border-box;
- 
+.row {
+  margin:15px;
+  background-color:white;
 }
 
-/* Create two equal columns that floats next to each other */
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+/* Create four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
-  padding: 10px;
   text-align: center;
-/* Should be removed. Only for demonstration */
+
+  width: 25%;
 }
 
-/* Clear floats after the columns */
+/* Clear floats after rows */ 
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* Content */
+.content {
+  background-color: #DFD8CA;
+  
+  padding: 15px;
+  height: 550px;
+  width: 350px;
+  color: black;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
   .column {
-    width: 100%;
+    width: 50%;
   }
 }
 
-
-/* Create three equal columns that floats next to each other */
-
-
-
- 
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
- 
-  
- 
-  font-family: "Allura",cursive;
-  
-  color: white;
-}
 .column h3{
   font-size: 20px;
 }
@@ -200,6 +189,14 @@ body {
 .navbar .icon {
   display: none;
 }
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    
+    .column {   
+      width:100%;
+    }
+  }
+  
  
 </style>
 
@@ -211,89 +208,103 @@ body {
 <div class="navbar" id="myTopnav">
     <a href="index.html">Home</a>
 
-  <a href="blog.html">Blog</a>
+  <a href="bolg.html">Blog</a>
   <a href="initiative.html">Initiative</a>
   <a href="newsletter.html">News Letter</a>
  
-  <a href="about.html" class="right">About</a>
+  <a href="about us page.html" class="right">About</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
-
-      
-    <div class="page"  style="padding: 10px; background-color: #DFD8CA;">
-       <h1 style="text-align: center; font-family: 'Allura',cursive;">Meet the Team!</h1>
-      <div class="row" style="  background: linear-gradient(#1488CC,#348F50);
-      ; padding: 20px; color: white; ">
-        
-       
-        <h2 style="text-align: center;">Coordinators 2021</h2>
-        
-        <div class="column" >
-
-        <h3>Jagruthi Sarikonda</h3>
-        <p><img id="myImage"  src='images/about/jagruthi2k21.jpeg' height="240px" width="250px" ></a></p>
-      <p>I'm a Third year Undergraduate majoring in Bioengineering.I have always been fascinated and wanting to explore the world of biology.Since covid outbreak,I developed interest in understanding Immune system and in developing Vaccines.Apart from biology,I enjoy feel good movies,series,cartoons and Yoga.</p>        
-      </div>
-        
-        <div class="column" >
-          <h3>Renuka Kolusu</h3>
-          <p><img id="myImage"  src='images/about/renuka2k21.jpeg' height="240px" width="270px" ></a></p>
-<p>I'm a third year undergraduate majoring in bilogical sciences. I am more passionate about implementing Machine learning applications in real-world problems specifically healthcare.Want to somehow contribute my part in human being welfare. I love sketching and enjoys travelling a lot and want to explore more.</p>        </div>
-
+<div class="container">
  
-<div class="column" >
-          <h3>Anvita Shekar</h3>
-          <p><img id="myImage"  src='images/about/anvitha.jpeg' height="270px" width="220px" ></a></p>
-            <p>I am a second year undergraduate student pursuing mechanical engineering. I'm interested in biomechanics and love learning about the latest research in the field of biotechnology. Apart from this, my hobbies include reading and baking!</p>
-        </div>
-        <div class="column" >
-          <h3>Tushar Balani</h3>
-          <p><img id="myImage"  src='#' height="250px" width="250px" ></a></p>
-<p>-------------</p>        </div>
+ 
+  <div class="centered" style="padding:50px;background-image:url('https://png.pngtree.com/thumb_back/fh260/background/20201022/pngtree-abstract-technology-background-hexagonal-biotechnology-banner-presentation-image_430313.jpg'); background-repeat: no-repeat ;
+  background-size: cover;">
+    <h1 style="text-align: center;color:blanchedalmond;font-family: 'Allura',cursive;">Meet the Team!</h1>
+  
+  </div>
+</div>
+   
+<div class="page"  style="padding: 20px; background-color:white ;">
        
-
+   
+      
+        
+<!-- Portfolio Gallery Grid --> 
+<h2 style="text-align: center; background-color: #105652; color: white;font-family: cursive;font-size:18px;">Coordinators 2021</h2>
+       
+        <div class="row" > 
+          <div class="column"><div class ="content">
+            
+            <h3>Jagruthi Sarikonda</h3>
+            <p><img id="myImage"  src='jagruthi 2.jpeg' height="250px" width="250px" ></a></p>
+            
+            <p>I'm a Third year Undergraduate majoring in Bioengineering.I have always been fascinated and wanting to explore the world of biology.Since covid outbreak,I developed interest in understanding Immune system and in developing Vaccines.Apart from biology,I enjoy feel good movies,series,cartoons and Yoga.</p>
+          </div> </div>
+           
+      
       
           
+        <div class="column" ><div class ="content">
+          <h3>Renuka Kolusu</h3>
+          <p><img id="myImage"  src='renuka2k21.jpeg' height="250px" width="270px" ></a></p>
+          
+          <p>I'm a third year undergraduate majoring in bilogical sciences. I am more passionate about implementing Machine learning applications in real-world problems specifically healthcare.Want to somehow contribute my part in human being welfare. I love sketching and enjoys travelling a lot and want to explore more.</p>        
+        
+          </div>
+        </div>
+          
+        <div class="column" ><div class ="content">
+          <h3>Anvita Shekar</h3>
+          <p><img id="myImage"  src='anvitha.jpeg' height="250px" width="200px" ></a></p>
+          
+          <p>I am a second year undergraduate student pursuing mechanical engineering. I'm interested in biomechanics and love learning about the latest research in the field of biotechnology. Apart from this, my hobbies include reading and baking!</p>
+        </div>
+          </div>
+          
+        <div class="column" ><div class ="content">
+          <h3>Tushar Balani</h3>
+          <p><img id="myImage"  src='tushar.jpeg' height="250px" width="250px"  ></a></p>
+          
+          <p>-------------</p>       
+        
+          </div></div>
+      </div> 
+
       
+  
+    
+    
+      <h2 style="text-align: center; background-color: #105652; color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:18px;">Heads 2021</h2>
+      <div class="row">
+        
        
      
         
-        
-        
-      </div>
-    
-    
-
-      <div class="row" style="  background: linear-gradient(#348F50,#1488CC);
-      ; padding: 20px; color: white; ">
-        
-       
-        <h2 style="text-align: center;">Heads 2021</h2>
-        
-        <div class="column" >
+        <div class="column" ><div class ="content">
           <h3>Gayathri Prakash</h3>
-          <p><img id="myImage"  src='images/about/gayatri_2k21.png' height="250px" width="250px" ></a></p>
+          <p><img id="myImage"  src='gayatri_2k21.png' height="250px" width="250px" ></a></p>
             <p>I am a third year Bioscience undergrad fascinated by the mechanisms of cell development and regulation, and love working in the lab. Apart from bio, I enjoy thriller novels, writing, cricket and crosswords!</p>
-        </div>
+        </div></div>
       
-        <div class="column" >
+        <div class="column" ><div class ="content">
           <h3>Nanda Kumar</h3>
-          <p><img id="myImage"  src='images/about/nanda_2k21.jpg' height="250px" width="200px" ></a></p>
+          <p><img id="myImage"  src='nanda_2k21.jpg' height="250px" width="200px" ></a></p>
             <p>I am a second year MS student working under Prof S.Mahalingam, on autophagic cell death in breast cancer cells. My fields of interests are cell cycle, cell signaling and curative medicine. My other interests are playing chess, reading biographies and getting to know about animal behavior.</p>
-        </div>
-        <div class="column" >
+        </div></div>
+        <div class="column" ><div class ="content">
           <h3>Neha Swaminathan</h3>
-          <p><img id="myImage"  src='images/about/Neha2k21.jpg' height="250px" width="250px" ></a></p>
+          <p><img id="myImage"  src='Neha2k21.jpg' height="250px" width="250px" ></a></p>
             <p>I'm a third-year undergraduate majoring in biological engineering. I am deeply interested in the complexities of cancer biology and other health-related research, and hope to someday make a positive contribution to the world. Apart from science, I’m also passionate about dance and music!</p>
-        </div>
-        <div class="column" >
+        </div></div>
+        <div class="column" ><div class ="content">
           <h3>Sriya Veerapaneni</h3>
-          <p><img id="myImage"  src='images/about/Sriya2k21.jpg' height="250px" width="250px" ></a></p>
+          <p><img id="myImage"  src='Sriya2k21.jpg' height="250px" width="250px" ></a></p>
             <p>I’m a third-year undergraduate majoring in biological sciences. I’m interested in understanding the complex nature of the brain through computational and experimental approaches. I enjoy painting or dancing in my free time .</p>
         </div>
-       
+       </div>
 
       
           
@@ -305,17 +316,11 @@ body {
         
       </div>
     
-    
-      <div class="row" style="background: linear-gradient(#1488CC,#348F50); padding: 20px; color: white; ">
+      <h2 style="text-align: center; background-color: #105652; color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:18px;">
+        Founders & Heads '19,'20</h2>
+      
+      <div class="row" >
         
-        <h2 style="text-align: center;">Alumni Talks Coordinator '20</h2>
-        
-        <div class="column" style="text-align: center;">
-          <h3>Burhan Sabuwala
-          </h3>
-          <p><img id="myImage"  src='images/about/Burhan_2k21.jpg' height="250px" width="250px" ></a></p>
-            <p>I'm a fourth-year undergraduate majoring in biological engineering and data science. I'm interested in addressing questions related to human diseases from a computational or data-driven lens and very excited by complex and dynamic systems.</p>
-        </div>
         
         
       
@@ -326,53 +331,47 @@ body {
         
         
         
-      </div>
-    
-      <div class="row" style="background: linear-gradient(#348F50,#1488CC);padding: 20px; color: white; ">
+      
         
-        <h2 style="text-align: center;">Founders & Heads '19,'20</h2>
         
-        <div class="column" >
+        <div class="column" ><div class ="content">
           <h3>Sahana Gangadharan</h3>
-          <p><img id="myImage"  src='images/about/Sahana_2k19.jpg' height="250px" width="250px" ></a></p>
+          <p><img id="myImage"  src= 'Sahana_2k19.jpg' height="250px" width="250px" ></a></p>
             <p>I’m a fourth-year undergraduate majoring in biological engineering. I’m interested in understanding the various aspects that govern development and communications within the brain, soul-stirring music and movies, and meeting new people.</p>
-        </div>
+        </div></div>
         
-        <div class="column" >
+        <div class="column" ><div class ="content">
           <h3>Sankalpa Venkatraghavan</h3>
-          <p><img id="myImage"  src='images/about/Sankalpa_2k19.jpg' height="250px" width="250px" ></a></p>
+          <p><img id="myImage"  src='Sankalpa_2k19.jpg' height="250px" width="250px" ></a></p>
             <p>I’m a fourth-year undergraduate majoring in biological engineering. I’m interested in research centred on questions from biology - especially those studied using the integrated approach of experiments, modelling and theory, books that make you feel things and the art of science communication.<br>
-              <a href="https://sankalpavenkatraghavan.wordpress.com/" style="text-decoration: underline; color: yellow;">sankalpavenkatraghavan.com</a></p>
-        </div>
+              <a href="https://sankalpavenkatraghavan.wordpress.com/" style="text-decoration: underline; color: red;">sankalpavenkatraghavan.com</a></p>
+        </div></div>
 
-        <div class="column"style="text-align: center;" >
+        <div class="column"style="text-align: center;" ><div class ="content">
           <h3>Sathvik Anantakrishnan
           </h3>
-          <p><img id="myImage"  src='images/about/Sathvik_2k19.jpg' height="250px" width="250px" ></a></p>
+          <p><img id="myImage"  src='Sathvik_2k19.jpg' height="250px" width="250px" ></a></p>
             <p>I’m a fourth-year undergraduate majoring in biological sciences. I’m interested in interdisciplinary research, particularly in the use of physics and mathematical modeling to understand living systems. Outside of science, I love cats and all kinds of books.<br>
              </p>
-        </div>
-
-        
-
+        </div></div>
+    </div>
+    
+    
+    
+  
       
-          
-      
-       
-     
-        
-        
-        
-      </div>
-       </div>
+  <h2 style="text-align: center; background-color: #105652; color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:18px;">Alumni Talks Coordinator '20</h2>
+  <div class="row" >
+    <div class="column" style="text-align: center;"><div class ="content">
+      <h3>Burhan Sabuwala
+      </h3>
+      <p><img id="myImage"  src='Burhan_2k21.jpg' height="250px" width="250px" ></a></p>
+        <p>I'm a fourth-year undergraduate majoring in biological engineering and data science. I'm interested in addressing questions related to human diseases from a computational or data-driven lens and very excited by complex and dynamic systems.</p>
+    </div></div>
+  </div> 
+    </div>
    
-      
-     
-
-    
-       <script src="navbar.js">
-    
-      </script>
+<script src="navbar.js"></script>
     
      
    
@@ -380,10 +379,11 @@ body {
   
   
  
-       <div class="footer">
+<div class="footer">
         <p>Follow Us &emsp; <a href="https://www.instagram.com/bsaiitm/" target="_blank" ><i class="fa fa-instagram" style="font-size:36px"></i></a>&emsp;<a href="https://www.facebook.com/biotechresearchclubiitmadras" target="_blank" ><i class="fa fa-facebook-square" style="font-size:36px"></i></a>&emsp;<a href="mailto:biotechresearchclubiitm@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:36px"></i></a>&emsp;<a href="https://chat.whatsapp.com/AnLJuBtdjXP5ltT8dtlLrR" target="_blank"><i class="fa fa-whatsapp" style="font-size:36px"></i></a></p>
        
       </div>
+    </body>
 
-</body>
+
 </html>

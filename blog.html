@@ -1,216 +1,228 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Calibri;  margin: 0;
+   
+  }
+  
+  /* Header/logo Title */
+  
+  .blog1 a{
+    text-decoration: none;
+  }
+
+  /* Create two equal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+float: left;
+width: 50%;
+padding:20px;
+}
+
+/* Right column */
+.rightcolumn {
+float: left ;
+width: 50%;
+padding: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+background-color: purple;
+width: 100%;
+padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+background-color: violet ;
+padding: 20px;
+height:470px;
+color : black;
+}
+.column {
+float: left;
+width: 25%;
+padding: 10px;
+background-color: darkorchid;
+
+text-align: center;
+/* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+  
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: pink;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .navbar .icon {
+    display: none;
+  }
+  @media screen and (max-width: 700px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  /* Main column */
+  .main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: purple;
+    padding: 20px;
+    font-family: Calibri;  
+  }
+  .main h4{
+    font-family: Calibri;}
+  
+  .blog1 {
+    background-color: #414141;
+    width: 100%;
+    padding: 20px;
+    color: black;
+  
+  }
+  
+  
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background: #105652;
+    color: white;
+    
+  }
+  .footer a{
+    text-decoration: none; 
+    color: white;
+  
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+.column {
+  width: 50%;
+}
+}
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  
+  .column {   
+    width:100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+  
+  
+  
+  .container {
+    position: relative;
+    text-align: center;
+    color: pink ; 
+    font-family: "Allura",cursive;
+    font-size: 30px;
+    
+  }
+ /* The Modal (background) */
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: black;
+}
+img.hover-shadow {
+transition: 0.3s;
+}
+
+.hover-shadow:hover {
+box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: pink;
+  color: white;
+}
+.footer a{
+  text-decoration: none; 
+  color: white;
+}
+
+  
+  
+  </style>
 <title>BRC</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style>
-    * {
-      box-sizing: border-box;
-    }
-    
-    /* Style the body */
-    body {
-      font-family: Calibri;  margin: 0;
-     
-    }
-    
-    /* Header/logo Title */
-    
-    .blog1 a{
-      text-decoration: none;
-    }
 
-    /* Create two equal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 50%;
-  padding:20px;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left ;
-  width: 50%;
-padding: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: #DFD8CA ;
-  padding: 20px;
-  height:470px;
-  color : #105652;
-}
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  
-  text-align: center;
-/* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-    
-    /* Style the top navigation bar */
-    .navbar {
-      overflow: hidden;
-      background-color: #333;
-    }
-    
-    /* Style the navigation bar links */
-    .navbar a {
-      float: left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 20px;
-      text-decoration: none;
-      font-size: 16px;
-    }
-    
-    /* Right-aligned link */
-    .navbar a.right {
-      float: right;
-    }
-    
-    /* Change color on hover */
-    .navbar a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    .navbar .icon {
-      display: none;
-    }
-    @media screen and (max-width: 700px) {
-      .navbar a:not(:first-child) {display: none;}
-      .navbar a.icon {
-        float: right;
-        display: block;
-      }
-    }
-    
-    @media screen and (max-width: 700px) {
-      .navbar.responsive {position: relative;}
-      .navbar.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-    }
-    
-    /* Main column */
-    .main {   
-      -ms-flex: 70%; /* IE10 */
-      flex: 70%;
-      background-color: #DFD8CA;
-      padding: 20px;
-      font-family: Calibri;  
-    }
-    .main h4{
-      font-family: Calibri;}
-    
-    .blog1 {
-      background-color: #414141;
-      width: 100%;
-      padding: 20px;
-      color: white;
-    
-    }
-    
-    
-    .footer {
-      padding: 10px;
-      text-align: center;
-      background: #105652;
-      color: white;
-      
-    }
-    .footer a{
-      text-decoration: none; 
-      color: white;
-    
-    }
-    /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 700px) {
-    
-    .column {   
-      width:100%;
-    }
-  }
-  
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .navbar a {
-      float: none;
-      width: 100%;
-    }
-  }
-  
-    
-    
-    
-    .container {
-      position: relative;
-      text-align: center;
-      color: #105652 ; 
-      font-family: "Allura",cursive;
-      font-size: 30px;
-      
-    }
-   /* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-    
-    
-    </style>
     
 </head>
 <body>
@@ -229,15 +241,15 @@ img.hover-shadow {
     <div class="container">
      
      
-      <div class="centered" style=' padding:50px;background-image:url(images/blog/blog.jpg);  background-repeat: no-repeat ;
-      background-size: cover; color : white;'>
+      <div class="centered" style=' padding:50px;background-image:url(https://i.postimg.cc/cHRhQycg/dna-representation-collage.jpg);  background-repeat: no-repeat ;
+      background-size: cover; background-color : purple;'>
         <h1>Blog</h1>
       
       </div>
     </div>
 
-  <p style="text-align: end;color:#105652;font-family:verdana;font: size 5px;">*Click on the Images to Read more about the Blogs*</p>
-  <div class="row" style ="background-color:white ;color :#105652;"  >
+  <p style="text-align: end;color:black;font-family:verdana;font: size 5px;">*Click on the Images to Read more about the Blogs*</p>
+  <div class="row" style ="background-color:purple ;color : pink;"  >
     
     
     <div class= "column">
